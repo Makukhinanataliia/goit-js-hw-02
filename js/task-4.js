@@ -9,9 +9,27 @@ function getShippingCost(country) {
     case "Jamaica":
       return "Shipping to Jamaica will cost 120 credits";
     default:
-      return "Sorry, there is no delivery to your country";
+      return  "Sorry, there is no delivery to your country";
   }
 }
+
+// function getShippingCost(country) {
+//   const price =
+//     country === "China"
+//       ? "Shipping to China will cost 100 credits"
+//       : country === "Chile"
+//       ? "Shipping to Chile will cost 250 credits"
+//       : country === "Australia"
+//       ? "Shipping to Australia will cost 170 credits"
+//       : country === "Jamaica"
+//       ? "Shipping to Jamaica will cost 120 credits"
+//       : "Sorry, there is no delivery to your country";
+
+//   return price;
+// }
+
+
+
 console.log(getShippingCost("Australia")); // "Shipping to Australia will cost 170 credits"
 console.log(getShippingCost("Germany")); // "Sorry, there is no delivery to your country"
 console.log(getShippingCost("China")); // "Shipping to China will cost 100 credits"
